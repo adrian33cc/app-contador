@@ -1,13 +1,14 @@
-import { CommonModule } from "@angular/common";
-import { NgModule } from "@angular/core";
-import { HeroeComponent } from "./heroe/heroe.component";
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { HeroeComponent } from './heroe/heroe.component';
+import {ListadoComponent} from './listado/listado.component';
 
 
 @NgModule({
-    declarations:[HeroeComponent],
-    exports:[HeroeComponent],
-    imports:[CommonModule],
+    declarations: [HeroeComponent, ListadoComponent],
+    exports: [HeroeComponent, ListadoComponent],
+    imports: [CommonModule],
 })
 
-//NUNCA SE TE OLVIDE
+// NUNCA SE TE OLVIDE
 export class HeroesModule{}
